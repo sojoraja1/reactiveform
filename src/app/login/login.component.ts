@@ -9,6 +9,8 @@ import { forbiddenNameValidator } from './validator';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent{
+   birth:Date = new Date();
+   myname:String = "susndar";
   profileForm = this.fb.group({
     firstName: ['',[Validators.required,Validators.minLength(4),forbiddenNameValidator(/bob/i) ] ],
     lastName: ['']

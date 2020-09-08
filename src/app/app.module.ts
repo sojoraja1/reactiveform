@@ -6,11 +6,13 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { RouterModule } from '@angular/router';
+import { RolePipe } from './role.pipe';
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    HomeComponent
+    HomeComponent,
+    RolePipe
   ],
   imports: [
     BrowserModule,
